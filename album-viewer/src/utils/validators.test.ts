@@ -6,11 +6,16 @@ describe('validateDate', () => {
     const result = validateDate('12/25/2020');
     expect(result).toBeInstanceOf(Date);
   });
+    it('should return null for a date string with invalid month', () => {
+    const result = validateDate('12/32/2020');
+    expect(result).toBeNull();
+  });
 
   it('should return null for an invalid date string', () => {
     const result = validateDate('invalid-date');
     expect(result).toBeNull();
   });
+
 });
 
 
