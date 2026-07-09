@@ -1,6 +1,6 @@
 name: Build and Deploy
 on:
-  push:
+  # push:
     # branches: [main]
     # # Publish semver tags as releases.
     # tags: ["v*.*.*"]
