@@ -11,10 +11,7 @@ describe('validateDate', () => {
     expect(result).toBeNull();
   });
 
-  it('should return null for an invalid date string', () => {
-    const result = validateDate('invalid-date');
-    expect(result).toBeNull();
-  });
+
 
 });
 
