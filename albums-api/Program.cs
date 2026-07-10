@@ -46,6 +46,8 @@ app.MapGet("/", async context =>
     await context.Response.WriteAsync("Hit the /albums endpoint to retrieve a list of albums!");
 });
 
+
+
 app.MapControllers();
 
 app.Run();
