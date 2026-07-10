@@ -46,6 +46,9 @@ app.MapGet("/", async context =>
     await context.Response.WriteAsync("Hit the /albums endpoint to retrieve a list of albums!");
 });
 
+// Add 301 permanent redirect from /album (singular) to /albums (plural)
+app.MapGet("/album", () => Results.Redirect("/albums", permanent: true));
+
 app.MapControllers();
 
 app.Run();
